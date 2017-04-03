@@ -14,7 +14,6 @@ import (
 
 type SiteData struct {
 	Name     string
-	clubs    string
 	Count    string
 	ServerIP string
 	MapData  string
