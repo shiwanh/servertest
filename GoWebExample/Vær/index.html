@@ -1,0 +1,23 @@
+<html>
+<head>
+    <center><title>HTML reference</title><
+</head>
+<body>
+<center><Font color="#67d5ff"><font size"20">Værmelding for universiteter</font></FONT></center>
+  <head>
+  <body background="https://khrono.no/sites/default/files/main/articles/kobenhavns_universitet_0.jpg">
+  </head>
+  <body>
+
+
+JSON INFO:
+    <br>
+    <br><FONT color="#67d5ff"> <b>Værvarsel for {{ .Name }} </b></FONT>
+    <br>
+    <br><FONT color="#67d5ff"><b>Værforhold:</b>  {{ with $w := index .Weather 0 }}{{ $w.Main }} ({{ $w.Description }}){{ end }}</FONT>
+    <br>
+    <FONT color="#67d5ff"><b>Temperatur:</b> {{ .Main.temp }} ºC</FONT>
+    <FONT color="#67d5ff"><br><b>Vind styrke:</b>  {{ .Wind.speed }} m/s</FONT>
+    <br></center>
+</body>
+</html>
